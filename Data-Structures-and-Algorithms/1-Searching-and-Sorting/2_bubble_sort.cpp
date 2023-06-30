@@ -3,6 +3,7 @@
 void bubbleSort(int arr[], int size)
 {
     int i, j, temp;
+    int res = 0;
     for (i = 0; i < size; i++)
     {
         for (j = 0; j < size - 1 - i; j++)
@@ -12,14 +13,16 @@ void bubbleSort(int arr[], int size)
                 temp = arr[j + 1];
                 arr[j + 1] = arr[j];
                 arr[j] = temp;
+                res += 2;
             }
         }
     }
+    printf("%d", res);
 }
 
 int main(void)
 {
-    int arr[] = {8, 7, 2, 1, 0, 9, 6};
+    int arr[] = {7, 6, 5, 4, 3, 2, 1};
     int size = sizeof(arr) / sizeof(arr[0]), i;
 
     printf("Before bubbleSort: ");
