@@ -30,16 +30,27 @@ void display_memory()
         printf("%d:\t%s\n", i, memory[i].is_free ? "----------------" : "xxxxxxxxxxxxxxxx");
 }
 
+<<<<<<< HEAD
 // Displays fail
 void no_memory()
 {
     printf("\nFailed to take place in memory!\n\n");
+=======
+// Yer alinamadi uyarisi.
+void no_memory()
+{
+    printf("\nCould not take place!\n\n");
+>>>>>>> 5ea5e8859c718e1edbcceb2ae77e161a583021de
 }
 
 // Manual allocate memory
 void free_allocate_memory(int flag, int start, int size)
 {
+<<<<<<< HEAD
     bool flag2 = true;
+=======
+	bool flag2 = true;
+>>>>>>> 5ea5e8859c718e1edbcceb2ae77e161a583021de
     if (start < 0 || start + size > MEMORY_SIZE)
         printf("Invalid memory!\n");
     else
@@ -48,6 +59,7 @@ void free_allocate_memory(int flag, int start, int size)
         {
             for (int i = start; i < start + size; i++)
             {
+<<<<<<< HEAD
                 if (!memory[i].is_free)
                     flag2 = false;
             }
@@ -65,6 +77,25 @@ void free_allocate_memory(int flag, int start, int size)
             }
             else
                 printf("The memory you want to set is full!\n");
+=======
+            	if (!memory[i].is_free)
+            		flag2 = false;
+            }
+            if (flag2)
+            {
+            	for (int i = start; i < start + size; i++)
+            	{
+	            	if (memory[i].is_free)
+	                {
+	                    memory[i].is_free = false;
+	                    freeMemory--;
+	                    lastFit = i;
+	                }	
+            	}
+			}
+			else
+				printf("The memory you want to set is full!\n");
+>>>>>>> 5ea5e8859c718e1edbcceb2ae77e161a583021de
         }
         else
         {
@@ -275,4 +306,8 @@ int main(void)
         }
     }
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5ea5e8859c718e1edbcceb2ae77e161a583021de
