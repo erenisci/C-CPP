@@ -80,7 +80,7 @@ void free_allocate_memory(int flag, int start, int size)
     }
 }
 
-// Yeterli hafiza varsa ilk buldugu bosluga atama yapar.
+// If there is enough memory, it assigns the first space where it is found
 void first_fit(int space)
 {
     int temp = 0, loc = 0;
