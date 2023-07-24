@@ -33,7 +33,7 @@ void display_memory()
 // Displays fail
 void no_memory()
 {
-    printf("\nFailed to take place in memory warning!\n\n");
+    printf("\nFailed to take place in memory!\n\n");
 }
 
 // Manual allocate memory
