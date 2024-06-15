@@ -1,3 +1,3 @@
-## Description of the Repository
+# C-CPP Repository
 
-In this repository, I will upload my C/C++ programs and scripts that I prepared with the resources used by my university.
+This repository contains materials and projects related to my university coursework, particularly focusing on lab exercises, data structures, algorithms, and additional C/C++ projects.
